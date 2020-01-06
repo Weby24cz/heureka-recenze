@@ -41,7 +41,7 @@ class EshopReviewsClient extends BaseClient {
 		} else {
 			$review->recommends = null;
 		}
-		
+
 		if (count($element->communication)) {
 			$review->ratingCommunication = (float)$element->communication;
 		} else {
