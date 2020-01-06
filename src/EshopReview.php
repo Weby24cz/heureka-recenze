@@ -36,6 +36,13 @@ class EshopReview {
 	public $date;
 
 	/**
+	 * Doporučujete obchod svým známým? Ano / Ne
+	 *
+	 * @var int|null
+	 */
+	public $recommends;
+
+	/**
 	 * Hodnocení celkové - na stupnici 0.5 až 5 hvězdiček
 	 *
 	 * @var number|null
