@@ -36,6 +36,12 @@ class EshopReviewsClient extends BaseClient {
 		$review->orderId = (string)$element->order_id;
 		$review->pros = (string)$element->pros;
 
+		if (count($element->recommends)) {
+			$review->recommends = (int)$element->recommends;
+		} else {
+			$review->recommends = null;
+		}
+		
 		if (count($element->communication)) {
 			$review->ratingCommunication = (float)$element->communication;
 		} else {
